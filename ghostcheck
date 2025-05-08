@@ -64,10 +64,10 @@ print_bad() {
 
 print_section "Basic DNS Records"
 
-A_RECORD=$(dig +short A $DOMAIN)
+A_RECORD=$(dig +short A $DOMAIN | paste -sd ' ')
 [[ -n "$A_RECORD" ]] && print_good "A Record: $A_RECORD" || print_bad "No A Record"
 
-AAAA_RECORD=$(dig +short AAAA $DOMAIN)
+AAAA_RECORD=$(dig +short AAAA $DOMAIN | paste -sd ' ')
 [[ -n "$AAAA_RECORD" ]] && print_good "AAAA Record: $AAAA_RECORD" || print_warn "No AAAA"
 
 NS_RECORDS=$(dig +short NS $DOMAIN | paste -sd ', ' -)
