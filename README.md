@@ -1,28 +1,20 @@
-# 🧠 GhostCheck
+# 🧠 GhostCheck – Domain Intel Scanner by GhostOps
 
-**GhostOps Domain Health Diagnostic Tool** — A powerful, terminal-based bash script that evaluates the DNS, email, and blacklist health of any domain using clean CLI output, emoji indicators, and log files.
+[![Install GhostCheck](https://img.shields.io/badge/Install-GhostCheck-blue?style=for-the-badge)](https://raw.githubusercontent.com/ruben9830/ghostcheck/main/ghostcheck-install.sh)
 
----
+A hacker-style, terminal-based domain reconnaissance tool that checks:
 
-## 💡 Features
-
-- ✅ A, AAAA, MX, CNAME, NS, SOA record checks  
-- ✅ SPF, DMARC, PTR validation  
-- ✅ Blacklist scans (Spamhaus, Spamcop, Barracuda)  
-- ✅ WHOIS lookup  
-- ✅ Color-coded CLI summary (✅, ❌, ⚠️)  
-- ✅ Auto-logging with cleanup after 7 days  
-- ✅ Interactive log viewer prompt  
-- ✅ `--help` and `--version` support
+- 🌐 A, AAAA, MX, NS, CNAME, SOA records
+- ☁️ Geo IP + ASN + ISP details
+- 📍 Country flags, region, city
+- 🔒 SPF / DMARC / PTR health
+- 🚫 DNSBL blacklist status
+- 🔍 WHOIS metadata
 
 ---
 
-## 🚀 Installation
-
-You can link your existing script OR clone the repo and install:
+## 🚀 Install (Ubuntu/Debian)
 
 ```bash
-git clone https://github.com/ruben9830/ghostcheck.git
-cd ghostcheck
-./install.sh
+curl -s https://raw.githubusercontent.com/ruben9830/ghostcheck/main/ghostcheck-install.sh | bash
 
