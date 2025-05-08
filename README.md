@@ -12,14 +12,16 @@ A hacker-style, terminal-based domain reconnaissance tool that checks:
 - 🔍 WHOIS metadata
 
 ---
-
 ## 🚀 Install (Ubuntu/Debian)
 
 ```bash
 curl -s https://raw.githubusercontent.com/ruben9830/ghostcheck/main/ghostcheck-install.sh | bash
+```
 
-👨‍💻 Created by
-Ruben Daniel Valencia JR.
+
+
+👨‍Created by
+Ruben Daniel Valencia Jr.
 🎓 Data Science M.S. @ University of Kentucky
 💻 B.S. in Information Technology
 📊 Sports Stats + Automation Enthusiast
